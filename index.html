@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>한국어 책과 함께 읽는 청소년 영어원서</title>
-  <meta name="description" content="한국어 원서와 함께 읽기 좋은 청소년 영어 원서 추천 큐레이션" />
+  <title>2025 우면도서관 청소년 추천 영어원서 16선</title>
+  <meta name="description" content="한국어 번역서와 함께 읽기 좋은 청소년 수준별 영어 원서 큐레이션" />
   <style>
     :root{
       --bg:#f7f7fb;
@@ -13,6 +13,9 @@
       --accent:#2563eb;
       --maxw:1200px;
       --radius:10px;
+      --easy: #10b981;   /* 초급 색상 */
+      --med: #3b82f6;    /* 중급 색상 */
+      --hard: #f59e0b;   /* 상급 색상 */
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", "Apple SD Gothic Neo", "맑은 고딕", Arial, sans-serif;
     }
     *{box-sizing:border-box}
@@ -34,16 +37,18 @@
     header h1{
       font-size:28px;
       margin:0;
+      word-break: keep-all;
     }
     header p.lead{
       margin:8px 0 0;
       color:var(--muted);
       font-size:16px;
+      word-break: keep-all;
     }
 
     .grid{
       display:grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap:24px;
       justify-content: center;
     }
@@ -55,6 +60,7 @@
       display:flex;
       flex-direction:column;
       transition: transform .15s ease, box-shadow .15s ease;
+      position: relative;
     }
     .card:hover{
       transform: translateY(-4px);
@@ -68,58 +74,53 @@
       object-fit: cover;
     }
     .body{
-      padding:12px;
+      padding:16px;
       display:flex;
       flex-direction:column;
-      gap:6px;
+      gap:4px;
       flex:1;
     }
+    /* 난이도 배지 스타일 추가 */
+    .badge {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      color: #fff;
+      padding: 2px 8px;
+      border-radius: 12px;
+      margin-bottom: 6px;
+      width: fit-content;
+    }
+    .badge.easy { background-color: var(--easy); }
+    .badge.med { background-color: var(--med); }
+    .badge.hard { background-color: var(--hard); }
+
     .title{
       font-weight:700;
-      font-size:16px;
+      font-size:17px;
       margin:0;
+      line-height: 1.3;
     }
     .subtitle {
       font-size:14px;
       color:var(--muted);
       margin:0;
     }
-    .meta{
-      font-size:13px;
-      color:var(--muted);
-    }
     .desc{
       font-size:14px;
-      color:#111;
+      color:#333;
       flex:1;
-      margin-top:4px;
-    }
-    .actions{
       margin-top:8px;
-      display:flex;
-      gap:8px;
-    }
-    .btn{
-      padding:6px 10px;
-      border-radius:6px;
-      text-decoration:none;
-      font-size:14px;
-      font-weight:600;
-      cursor:pointer;
-    }
-    .btn-primary{
-      background:var(--accent);
-      color:#fff;
-    }
-    .btn-ghost{
-      background:transparent;
-      border:1px solid #ccc;
-      color:var(--muted);
+      line-height: 1.5;
+      word-break: keep-all;
     }
     .note{
-      margin-top:32px;
-      font-size:13px;
+      margin-top:40px;
+      padding-top: 20px;
+      border-top: 1px solid #ddd;
+      font-size:14px;
       color:var(--muted);
+      text-align: center;
     }
 
     @media (max-width:600px){
@@ -131,164 +132,175 @@
 <body>
   <main class="wrap">
     <header class="site">
-      <h1>한국어 책과 함께 읽는 청소년 영어원서</h1>
-      <p class="lead">한국어 원서와 함께, 부담 없이 읽을 수 있는 청소년 영어 소설 추천 📚</p>
+      <h1>2025 우면도서관 청소년 추천 영어원서</h1>
+      <p class="lead">공공도서관 선정 목록 중 청소년이 읽기 좋은<br>뉴베리 수상작 및 스테디셀러 16선 📚</p>
     </header>
 
     <section class="grid">
-      <!-- 1 -->
       <article class="card">
-        <img class="cover" src="https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9781846275975.jpg" alt="Human Acts cover" />
+        <img class="cover" src="https://covers.openlibrary.org/b/isbn/9780064400558-L.jpg" alt="Charlotte's Web cover" />
         <div class="body">
-          <h2 class="title">Human Acts</h2>
-          <p class="subtitle">Han Kang — 소년이 온다</p>
-          <p class="desc">노벨문학상 수상자 한강의 대표작 중 하나로, 5.18 사건에 대해 이해하고 공감할 수 있음.</p>
+          <span class="badge easy">난이도: 초급</span>
+          <h2 class="title">Charlotte's Web</h2>
+          <p class="subtitle">E.B. White — 샬롯의 거미줄</p>
+          <p class="desc">문장이 아름답고 쉬워 원서 입문용 필독서. 우정과 생명의 소중함을 다룸 (뉴베리 아너)</p>
         </div>
       </article>
 
-      <!-- 2 -->
       <article class="card">
-        <img class="cover" src="https://covers.openlibrary.org/b/isbn/9781984896391-L.jpg" alt="A Good Girl's Guide to Murder cover" />
+        <img class="cover" src="https://covers.openlibrary.org/b/isbn/9780061992278-L.jpg" alt="The One and Only Ivan cover" />
         <div class="body">
-          <h2 class="title">A Good Girl's Guide to Murder</h2>
-          <p class="subtitle">Holly Jackson — 핍의 살인사건 안내서</p>
-          <p class="desc">영 어덜트 미스터리 소설. 넷플릭스에서 드라마로 영상화된 바 있어, 몰입하기 좋음.</p>
+          <span class="badge easy">난이도: 초급</span>
+          <h2 class="title">The One and Only Ivan</h2>
+          <p class="subtitle">Katherine Applegate — 세상에 단 하나뿐인 아이반</p>
+          <p class="desc">고릴라 아이반의 시점으로 서술되어 문장이 쉽고 매우 감동적임 (뉴베리 수상)</p>
         </div>
       </article>
 
-      <!-- 3 -->
       <article class="card">
-        <img class="cover" src="https://covers.openlibrary.org/b/isbn/9780062073488-L.jpg" alt="And Then There Were None cover" />
+        <img class="cover" src="https://covers.openlibrary.org/b/isbn/9780547577098-L.jpg" alt="Number the Stars cover" />
         <div class="body">
-          <h2 class="title">And Then There Were None</h2>
-          <p class="subtitle">Agatha Christie — 그리고 아무도 없었다.</p>
-          <p class="desc">전설적인 추리소설 작가 아가사 크리스티의 히트작. 짧고 흥미진진해서 몰입하여 읽기 좋음.</p>
+          <span class="badge easy">난이도: 초급</span>
+          <h2 class="title">Number the Stars</h2>
+          <p class="subtitle">Lois Lowry — 별을 헤아리며</p>
+          <p class="desc">2차 대전 나치를 피해 친구를 구하는 이야기. 어휘가 평이하고 서사가 뚜렷함 (뉴베리 수상)</p>
         </div>
       </article>
 
-      <!-- 4 -->
       <article class="card">
-        <img class="cover" src="https://covers.openlibrary.org/b/isbn/9781529157468-L.jpg" alt="Project Hail Mary cover" />
+        <img class="cover" src="https://covers.openlibrary.org/b/isbn/9780062691194-L.jpg" alt="New Kid cover" />
         <div class="body">
-          <h2 class="title">Project Hail Mary</h2>
-          <p class="subtitle">Andy Weir — 프로젝트 헤일메리</p>
-          <p class="desc">『마션』의 작가 앤디 위어 신작. 현재 영상화 중이며, 흥미진진한 SF 소설.</p>
+          <span class="badge easy">난이도: 초급</span>
+          <h2 class="title">New Kid</h2>
+          <p class="subtitle">Jerry Craft — 뉴 키드</p>
+          <p class="desc">전학 온 학생의 적응기를 다룬 그래픽노블. 만화 형식이라 접근성이 매우 높음 (뉴베리 수상)</p>
         </div>
       </article>
 
-      <!-- 5 -->
       <article class="card">
-        <img class="cover" src="https://covers.openlibrary.org/b/isbn/9780062961389-L.jpg" alt="almond cover" />
+        <img class="cover" src="https://covers.openlibrary.org/b/isbn/9781536214352-L.jpg" alt="Because of Winn-Dixie cover" />
         <div class="body">
-          <h2 class="title">almond</h2>
-          <p class="subtitle">Sohn, Won-Pyung — 아몬드</p>
-          <p class="desc">한국 청소년 소설 『아몬드』의 영어판. 친숙하게 접근할 수 있어 영어 원서 입문에 적합.</p>
+          <span class="badge easy">난이도: 초급</span>
+          <h2 class="title">Because of Winn-Dixie</h2>
+          <p class="subtitle">Kate DiCamillo — 윈딕시</p>
+          <p class="desc">개와 소녀의 우정을 다룬 따뜻한 이야기. 자연스러운 구어체 표현 학습에 좋음 (뉴베리 아너)</p>
         </div>
       </article>
 
-      <!-- 6 -->
       <article class="card">
-        <img class="cover" src="https://covers.openlibrary.org/b/isbn/9780062976581-L.jpg" alt="The Boy, the Mole, the Fox and the Horse cover" />
+        <img class="cover" src="https://covers.openlibrary.org/b/isbn/9780440414803-L.jpg" alt="Holes cover" />
         <div class="body">
-          <h2 class="title">The Boy, the Mole, the Fox and the Horse</h2>
-          <p class="subtitle">Charlie Mackesy — 소년과 두더지와 영어와 말</p>
-          <p class="desc">감성적이고 동화 같은 구조로 이해하기 쉬운 이야기.</p>
+          <span class="badge med">난이도: 중급</span>
+          <h2 class="title">Holes</h2>
+          <p class="subtitle">Louis Sachar — 구덩이</p>
+          <p class="desc">과거와 현재가 교차되는 치밀한 구성이 돋보이는 청소년 최고 인기작 (뉴베리 수상)</p>
         </div>
       </article>
 
-      <!-- 7 -->
       <article class="card">
-        <img class="cover" src="https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9781419741203.jpg" alt="Little Women cover" />
+        <img class="cover" src="https://covers.openlibrary.org/b/isbn/9780544442207-L.jpg" alt="The Giver cover" />
         <div class="body">
-          <h2 class="title">Little Women</h2>
-          <p class="subtitle">Louisa Alcott — 작은 아씨들</p>
-          <p class="desc">고전 명작. 원서 독해가 어렵지 않으면서 영화 등으로도 친숙하게 접근할 수 있는 작품.</p>
+          <span class="badge med">난이도: 중급</span>
+          <h2 class="title">The Giver</h2>
+          <p class="subtitle">Lois Lowry — 기억 전달자</p>
+          <p class="desc">통제된 미래 사회를 다룬 SF 명작. 철학적 주제를 생각하게 함 (뉴베리 수상)</p>
         </div>
       </article>
 
-      <!-- 8 -->
       <article class="card">
-        <img class="cover" src="https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9781529953602.jpg" alt="Marigold Mind Laundry cover" />
+        <img class="cover" src="https://covers.openlibrary.org/b/isbn/9781416936473-L.jpg" alt="Hatchet cover" />
         <div class="body">
-          <h2 class="title">Marigold Mind Laundry</h2>
-          <p class="subtitle">Jungeun Yun — 메리골드 마음 세탁소</p>
-          <p class="desc">한국 베스트 소설 원작. 따뜻하고 이해하기 쉬운 이야기로, 영어 원서 입문에 적합.</p>
+          <span class="badge med">난이도: 중급</span>
+          <h2 class="title">Hatchet</h2>
+          <p class="subtitle">Gary Paulsen — 손도끼</p>
+          <p class="desc">비행기 추락 후 소년의 처절한 야생 생존기. 남학생들에게 특히 인기 (뉴베리 아너)</p>
         </div>
       </article>
 
-      <!-- 9 -->
       <article class="card">
-        <img class="cover" src="https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9781786894243.jpg" alt="Life Of Pi cover" />
+        <img class="cover" src="https://covers.openlibrary.org/b/isbn/9780547534268-L.jpg" alt="A Single Shard cover" />
         <div class="body">
-          <h2 class="title">Life Of Pi</h2>
-          <p class="subtitle">Yann Martel — 라이프 오브 파이</p>
-          <p class="desc">동명의 영화가 유명해, 소설을 통해 더 구체적으로 상상하며 몰입할 수 있음.</p>
+          <span class="badge med">난이도: 중급</span>
+          <h2 class="title">A Single Shard</h2>
+          <p class="subtitle">Linda Sue Park — 사금파리 한 조각</p>
+          <p class="desc">고려청자를 만드는 장인과 소년의 이야기. 한국적 정서와 역사가 배경 (뉴베리 수상)</p>
         </div>
       </article>
 
-      <!-- 10 -->
       <article class="card">
-        <img class="cover" src="https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9780241734186.jpg" alt="Anne of Green Gables cover" />
-      <div class="body">
-          <h2 class="title">Anne of Green Gables</h2>
-          <p class="subtitle">L. M. Montgomery — 빨간머리 앤</p>
-          <p class="desc">고전이자 꾸준히 재생산되는 작품. 일상 표현과 감성적 표현들을 익히기에 좋음.</p>
+        <img class="cover" src="https://covers.openlibrary.org/b/isbn/9780375850868-L.jpg" alt="When You Reach Me cover" />
+        <div class="body">
+          <span class="badge med">난이도: 중급</span>
+          <h2 class="title">When You Reach Me</h2>
+          <p class="subtitle">Rebecca Stead — 어제로부터의 세계</p>
+          <p class="desc">시간 여행과 우정을 다룬 지적이고 흥미로운 퍼즐 같은 미스터리 소설 (뉴베리 수상)</p>
         </div>
       </article>
 
-      <!-- 11 -->
       <article class="card">
-        <img class="cover" src="https://covers.openlibrary.org/b/isbn/9781476738024-L.jpg" alt="A Man Called Ove cover" />
+        <img class="cover" src="https://covers.openlibrary.org/b/isbn/9780064401845-L.jpg" alt="Bridge to Terabithia cover" />
         <div class="body">
-          <h2 class="title">A Man Called Ove</h2>
-          <p class="subtitle">Fredrik Backman — 오베라는 남자</p>
-          <p class="desc">따뜻하면서도 현실적인 소설. 유쾌하고 읽기 가볍고, 동명 영화도 있음.</p>
+          <span class="badge med">난이도: 중급</span>
+          <h2 class="title">Bridge to Terabithia</h2>
+          <p class="subtitle">Katherine Paterson — 비밀의 숲 테라비시아</p>
+          <p class="desc">상상 속의 왕국과 예기치 못한 이별을 다룬 아름답고 슬픈 성장 소설 (뉴베리 수상)</p>
         </div>
       </article>
 
-      <!-- 12 -->
       <article class="card">
-        <img class="cover" src="https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9781529954265.jpg" alt="Pride & Prejudice cover" />
+        <img class="cover" src="https://covers.openlibrary.org/b/isbn/9780147510488-L.jpg" alt="The War That Saved My Life cover" />
         <div class="body">
-          <h2 class="title">Pride & Prejudice</h2>
-          <p class="subtitle">Jane Austen — 오만과 편견</p>
-          <p class="desc">고전 명작 로맨스. 다소 고전 표현이 있을 수 있지만, 원서 입문으로 좋은 선택.</p>
+          <span class="badge med">난이도: 중급</span>
+          <h2 class="title">The War That Saved My Life</h2>
+          <p class="subtitle">Kimberly B. Bradley — 나를 구한 그 겨울의 전쟁</p>
+          <p class="desc">장애를 가진 소녀가 전쟁 피난을 통해 자존감을 찾아가는 감동 실화 (뉴베리 아너)</p>
         </div>
       </article>
 
-      <!-- 13 -->
       <article class="card">
-        <img class="cover" src="https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9781035032891.jpg" alt="The Second Chance Convenience Store cover" />
+        <img class="cover" src="https://covers.openlibrary.org/b/isbn/9780375842207-L.jpg" alt="The Book Thief cover" />
         <div class="body">
-          <h2 class="title">The Second Chance Convenience Store</h2>
-          <p class="subtitle">Kim Ho-Yeon — 불편한 편의점</p>
-          <p class="desc">따뜻하고 감동적인 이야기로, 한국 소설 원작이라 보다 친숙하게 접근 가능.</p>
+          <span class="badge hard">난이도: 상급</span>
+          <h2 class="title">The Book Thief</h2>
+          <p class="subtitle">Markus Zusak — 책 도둑</p>
+          <p class="desc">2차 대전 독일, '죽음의 신'이 화자가 되는 독특하고 깊이 있는 소설 (프린츠 아너)</p>
         </div>
       </article>
 
-      <!-- 14 -->
       <article class="card">
-        <img class="cover" src="https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9781035428045.jpg" alt="The Wizard's Bakery cover" />
+        <img class="cover" src="https://covers.openlibrary.org/b/isbn/9780590353427-L.jpg" alt="Harry Potter cover" />
         <div class="body">
-          <h2 class="title">The Wizard's Bakery</h2>
-          <p class="subtitle">Gu Byeong-mo — 위저드 베이커리</p>
-          <p class="desc">청소년 베스트셀러의 영어판. 환상적인 이야기로 몰입하기 좋음.</p>
+          <span class="badge hard">난이도: 상급</span>
+          <h2 class="title">Harry Potter Series</h2>
+          <p class="subtitle">J.K. Rowling — 해리 포터 시리즈</p>
+          <p class="desc">전 세계적 판타지 명작. 후반부로 갈수록 어휘가 방대해지고 몰입도가 높음</p>
         </div>
       </article>
 
-      <!-- 15 -->
       <article class="card">
-        <img class="cover" src="https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9781035412761.jpg" alt="DallerGut Dream Department Store cover" />
+        <img class="cover" src="https://covers.openlibrary.org/b/isbn/9780439874021-L.jpg" alt="Echo cover" />
         <div class="body">
-          <h2 class="title">DallerGut Dream Department Store</h2>
-          <p class="subtitle">Lee Mye-ye — 달러구트 꿈백화점</p>
-          <p class="desc">이해하기 쉽고 재미있는 판타지 소설의 영어판. 이야기 자체가 흥미로움.</p>
+          <span class="badge hard">난이도: 상급</span>
+          <h2 class="title">Echo</h2>
+          <p class="subtitle">Pam Muñoz Ryan — 에코</p>
+          <p class="desc">하모니카를 매개로 시공간을 초월해 연결되는 세 아이의 환상적인 이야기 (뉴베리 아너)</p>
         </div>
       </article>
+
+      <article class="card">
+        <img class="cover" src="https://covers.openlibrary.org/b/isbn/9780312659301-L.jpg" alt="The Evolution of Calpurnia Tate cover" />
+        <div class="body">
+          <span class="badge hard">난이도: 상급</span>
+          <h2 class="title">The Evolution of Calpurnia Tate</h2>
+          <p class="subtitle">Jacqueline Kelly — 캘퍼니아 테이트의 진화</p>
+          <p class="desc">1899년 배경, 과학자를 꿈꾸는 소녀의 성장기. 문학적이고 고전적 문체 (뉴베리 아너)</p>
+        </div>
+      </article>
+
     </section>
 
     <div class="note">
-      <p>📌 향후 추가내용1. 난이도 추가 2. 동명의 한국어소설 청구기호 추가 예정 </p>
+      <p>📌난이도 구분: 초급(입문) / 중급(중학 수준) / 상급(고등 수준 및 장편)</p>
     </div>
   </main>
 </body>
