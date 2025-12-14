@@ -13,7 +13,6 @@
       --card-border: rgba(0,0,0,0.06);
       --text-main: #1e293b;
       --text-muted: #64748b;
-      --accent: #2563eb;
       --radius: 14px;
       --shadow: 0 10px 24px rgba(0,0,0,0.08);
 
@@ -65,7 +64,6 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 24px;
-      justify-content: center;
     }
 
     .card {
@@ -86,7 +84,7 @@
 
     .cover {
       width: 100%;
-      aspect-ratio: 2/3;
+      aspect-ratio: 2 / 3;
       object-fit: cover;
       background: #e2e8f0;
     }
@@ -100,17 +98,18 @@
     }
 
     .badge {
-      display: inline-block;
       font-size: 11px;
       font-weight: 700;
       color: #fff;
       padding: 3px 10px;
       border-radius: 999px;
       margin-bottom: 6px;
+      display: inline-block;
+      width: fit-content;
     }
-    .badge.easy { background-color: var(--easy); }
-    .badge.med { background-color: var(--med); }
-    .badge.hard { background-color: var(--hard); }
+    .badge.easy { background: var(--easy); }
+    .badge.med { background: var(--med); }
+    .badge.hard { background: var(--hard); }
 
     .title {
       font-weight: 700;
@@ -161,6 +160,149 @@
 
 <section class="grid">
 
+  <!-- 1 -->
+  <article class="card" onclick="goLibrary(`Charlotte's Web`)">
+    <img class="cover" src="https://covers.openlibrary.org/b/isbn/9780064400558-L.jpg" />
+    <div class="body">
+      <span class="badge easy">초보</span>
+      <h2 class="title">Charlotte's Web</h2>
+      <p class="subtitle">E.B. White — 샬롯의 거미줄</p>
+      <p class="desc">문장이 아름답고 쉽고 우정과 생명의 소중함을 다룬 소설</p>
+    </div>
+  </article>
+
+  <!-- 2 -->
+  <article class="card" onclick="goLibrary('The One and Only Ivan')">
+    <img class="cover" src="https://covers.openlibrary.org/b/isbn/9780061992278-L.jpg" />
+    <div class="body">
+      <span class="badge easy">초보</span>
+      <h2 class="title">The One and Only Ivan</h2>
+      <p class="subtitle">Katherine Applegate — 세상에 단 하나뿐인 아이반</p>
+      <p class="desc">고릴라 아이반의 시점으로 서술된 감동적인 이야기</p>
+    </div>
+  </article>
+
+  <!-- 3 -->
+  <article class="card" onclick="goLibrary('Number the Stars')">
+    <img class="cover" src="https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9780547577098.jpg" />
+    <div class="body">
+      <span class="badge easy">초보</span>
+      <h2 class="title">Number the Stars</h2>
+      <p class="subtitle">Lois Lowry — 별을 헤아리며</p>
+      <p class="desc">나치 시대를 배경으로, 평이한 어휘로 쓰여 이해가 쉬운 소설</p>
+    </div>
+  </article>
+
+  <!-- 4 -->
+  <article class="card" onclick="goLibrary('New Kid')">
+    <img class="cover" src="https://covers.openlibrary.org/b/isbn/9780062691194-L.jpg" />
+    <div class="body">
+      <span class="badge easy">초보</span>
+      <h2 class="title">New Kid</h2>
+      <p class="subtitle">Jerry Craft — 뉴 키드</p>
+      <p class="desc">전학생의 적응기를 담은 읽기 쉬운 그래픽노블</p>
+    </div>
+  </article>
+
+  <!-- 5 -->
+  <article class="card" onclick="goLibrary('Because of Winn-Dixie')">
+    <img class="cover" src="https://covers.openlibrary.org/b/isbn/9781536214352-L.jpg" />
+    <div class="body">
+      <span class="badge easy">초보</span>
+      <h2 class="title">Because of Winn-Dixie</h2>
+      <p class="subtitle">Kate DiCamillo — 윈딕시</p>
+      <p class="desc">아이와 개의 우정을 그려 감동과 몰입감이 높은 소설</p>
+    </div>
+  </article>
+
+  <!-- 6 -->
+  <article class="card" onclick="goLibrary('Holes')">
+    <img class="cover" src="https://covers.openlibrary.org/b/isbn/9780440414803-L.jpg" />
+    <div class="body">
+      <span class="badge med">중수</span>
+      <h2 class="title">Holes</h2>
+      <p class="subtitle">Louis Sachar — 구덩이</p>
+      <p class="desc">과거와 현재가 교차되는 구성의 청소년 걸작</p>
+    </div>
+  </article>
+
+  <!-- 7 -->
+  <article class="card" onclick="goLibrary('The Giver')">
+    <img class="cover" src="https://covers.openlibrary.org/b/isbn/9780544442207-L.jpg" />
+    <div class="body">
+      <span class="badge med">중수</span>
+      <h2 class="title">The Giver</h2>
+      <p class="subtitle">Lois Lowry — 기억 전달자</p>
+      <p class="desc">통제된 미래 사회를 배경으로 철학적 메시지를 담은 작품</p>
+    </div>
+  </article>
+
+  <!-- 8 -->
+  <article class="card" onclick="goLibrary('Hatchet')">
+    <img class="cover" src="https://covers.openlibrary.org/b/isbn/9781416936473-L.jpg" />
+    <div class="body">
+      <span class="badge med">중수</span>
+      <h2 class="title">Hatchet</h2>
+      <p class="subtitle">Gary Paulsen — 손도끼</p>
+      <p class="desc">야생에서의 생존기를 사실적으로 다룬 소설</p>
+    </div>
+  </article>
+
+  <!-- 9 -->
+  <article class="card" onclick="goLibrary('A Single Shard')">
+    <img class="cover" src="https://covers.openlibrary.org/b/isbn/9780547534268-L.jpg" />
+    <div class="body">
+      <span class="badge med">중수</span>
+      <h2 class="title">A Single Shard</h2>
+      <p class="subtitle">Linda Sue Park — 사금파리 한 조각</p>
+      <p class="desc">고려시대 도자기를 만드는 장인의 세계에 뛰어든 소년 이야기</p>
+    </div>
+  </article>
+
+  <!-- 10 -->
+  <article class="card" onclick="goLibrary('When You Reach Me')">
+    <img class="cover" src="https://covers.openlibrary.org/b/isbn/9780375850868-L.jpg" />
+    <div class="body">
+      <span class="badge med">중수</span>
+      <h2 class="title">When You Reach Me</h2>
+      <p class="subtitle">Rebecca Stead — 어제로부터의 세계</p>
+      <p class="desc">시간 여행과 우정이 섞인 퍼즐 같은 미스터리</p>
+    </div>
+  </article>
+
+  <!-- 11 -->
+  <article class="card" onclick="goLibrary('Bridge to Terabithia')">
+    <img class="cover" src="https://covers.openlibrary.org/b/isbn/9780064401845-L.jpg" />
+    <div class="body">
+      <span class="badge med">중수</span>
+      <h2 class="title">Bridge to Terabithia</h2>
+      <p class="subtitle">Katherine Paterson — 비밀의 숲 테라비시아</p>
+      <p class="desc">상실과 성장의 깊이를 담아낸 감성 성장 소설</p>
+    </div>
+  </article>
+
+  <!-- 12 -->
+  <article class="card" onclick="goLibrary('The War That Saved My Life')">
+    <img class="cover" src="https://covers.openlibrary.org/b/isbn/9780147510488-L.jpg" />
+    <div class="body">
+      <span class="badge med">중수</span>
+      <h2 class="title">The War That Saved My Life</h2>
+      <p class="subtitle">Kimberly B. Bradley — 나를 구한 그 겨울의 전쟁</p>
+      <p class="desc">전쟁 피난 속에서 자존감을 다시 찾는 성장 이야기</p>
+    </div>
+  </article>
+
+  <!-- 13 -->
+  <article class="card" onclick="goLibrary('The Book Thief')">
+    <img class="cover" src="https://covers.openlibrary.org/b/isbn/9780375842207-L.jpg" />
+    <div class="body">
+      <span class="badge hard">고수</span>
+      <h2 class="title">The Book Thief</h2>
+      <p class="subtitle">Markus Zusak — 책 도둑</p>
+      <p class="desc">죽음이 화자이고 깊은 문학성을 지닌 고전급 작품</p>
+    </div>
+  </article>
+
   <!-- 14 -->
   <article class="card" onclick="goLibrary('The Girl Who Drank the Moon')">
     <img class="cover" src="https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9781616207465.jpg" />
@@ -183,7 +325,7 @@
     </div>
   </article>
 
-  <!-- 16 (고화질 교체 완료) -->
+  <!-- 16 -->
   <article class="card" onclick="goLibrary('The Evolution of Calpurnia Tate')">
     <img class="cover" src="https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9780312659301.jpg" />
     <div class="body">
@@ -198,6 +340,7 @@
 
 <div class="note">
   📘 난이도: 초보(쉽고 가독성 높음) / 중수(이야기 깊이↑) / 고수(복잡한 어휘·긴 서사)
+
 </div>
 
 </main>
